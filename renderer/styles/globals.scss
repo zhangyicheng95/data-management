@@ -1,0 +1,36 @@
+body {
+  background: #F4F7FA;
+  margin: 0px;
+  padding: 0px;
+  //user-select: none;
+  font-family: PingFang-SC, PingFang-SC;
+
+  .border {
+    border-top: .5px solid var(--ant-color-border);
+  }
+
+  .ant-tabs {
+    .ant-tabs-nav {
+      background: var(--ant-tabs-card-bg);
+    }
+
+    .ant-tabs-tab {
+      font-weight: bold;
+    }
+
+    .ant-tabs-nav-wrap {
+      padding: 0px 16px;
+    }
+
+    .ant-tabs-content-holder {
+      padding: 0px 16px;
+    }
+  }
+
+  .download {
+    .ant-drawer-header {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
