@@ -1,0 +1,37 @@
+appId: com.example.data_management
+productName: UBS数据管理分析
+copyright: Copyright © 2024 盛景智能科技（嘉兴）有限公司
+directories:
+  output: dist
+  buildResources: resources
+asar: true
+npmRebuild: true
+# beforePack: ./lib/beforePackHook.js
+# copy文件
+extraResources:
+  - from: ./extraResources/
+    to: extraResources
+# 语言包
+electronLanguages:
+  - zh-CN
+# 压缩方式
+compression: normal
+nsis:
+  oneClick: false  # 布尔值为 false，表示禁用一键安装
+  allowToChangeInstallationDirectory: true  # 布尔值为 true，表示允许用户更改安装目录
+  allowElevation: true  # 布尔值为 true，表示允许提权
+mac:
+  icon: ./resources/icon.icns
+win:
+  icon: ./resources/icon.ico
+  target:
+    - target: nsis
+      arch: x64
+#    - target: msi
+#      arch: x64
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
